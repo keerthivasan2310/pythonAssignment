@@ -1,3 +1,3 @@
 # Python Assignment
 
-Hackerank python questions are practicing here
+python assignment questions are practicing here
