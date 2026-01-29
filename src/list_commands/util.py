@@ -1,29 +1,11 @@
-def process_commands(commands):
-    lst = []
-    outputs = []
+def handle_insert(my_list, index, element):
+    """Inserts integer e at position i."""
+    my_list.insert(index, element)
 
-    for command in commands:
-        parts = command.split()
+def handle_remove(my_list, element):
+    """Deletes the first occurrence of integer e."""
+    my_list.remove(element)
 
-        if parts[0] == "insert":
-            lst.insert(int(parts[1]), int(parts[2]))
-
-        elif parts[0] == "print":
-            outputs.append(str(lst))
-
-        elif parts[0] == "remove":
-            lst.remove(int(parts[1]))
-
-        elif parts[0] == "append":
-            lst.append(int(parts[1]))
-
-        elif parts[0] == "sort":
-            lst.sort()
-
-        elif parts[0] == "pop":
-            lst.pop()
-
-        elif parts[0] == "reverse":
-            lst.reverse()
-
-    return outputs
+def handle_append(my_list, element):
+    """Inserts integer e at the end of the list."""
+    my_list.append(element)
